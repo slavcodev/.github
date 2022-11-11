@@ -13,6 +13,7 @@
     ":enableVulnerabilityAlerts",
     ":timezone(UTC)",
     ":label(renovate)",
+    ":assignee(slavcodev)",
     "group:allNonMajor"
   ],
   "commitBodyTable": true,
@@ -22,6 +23,7 @@
       "schedule:daily"
     ]
   },
+  "ignoreDeps": ["php"],
   "platformAutomerge": true,
   "prFooter": "[Read more](https://github.com/slavcodev/.github/blob/HEAD/renovate.md) about the use of [Renovate Bot](https://github.com/renovatebot/renovate) within `slavcodev/*` projects.",
   "rangeStrategy": "replace",
