@@ -2,27 +2,28 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Default configuration for repositories under `slavcodev/`",
   "extends": [
+    ":assignAndReview(slavcodev)",
     ":dependencyDashboard",
     ":ignoreModulesAndTests",
-    ":automergeMinor",
     ":automergeBranch",
+    ":automergeDigest",
+    ":automergeLinters",
+    ":automergeMinor",
+    ":automergePr",
+    ":automergeTesters",
+    ":automergeTypes",
     ":rebaseStalePrs",
+    ":combinePatchMinorReleases",
     ":semanticCommitsDisabled",
     ":separateMajorReleases",
     ":combinePatchMinorReleases",
     ":enableVulnerabilityAlerts",
+    ":maintainLockFilesWeekly",
     ":timezone(UTC)",
     ":label(renovate)",
-    ":assignee(slavcodev)",
     "group:allNonMajor"
   ],
   "commitBodyTable": true,
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": [
-      "schedule:daily"
-    ]
-  },
   "ignoreDeps": ["php"],
   "platformAutomerge": true,
   "prFooter": "[Read more](https://github.com/slavcodev/.github/blob/HEAD/renovate.md) about the use of [Renovate Bot](https://github.com/renovatebot/renovate) within `slavcodev/*` projects.",
